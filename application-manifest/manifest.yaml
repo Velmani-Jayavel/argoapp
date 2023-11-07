@@ -14,7 +14,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Velmani-Jayavel/onlinebot.git
+    repoURL: https://github.com/Velmani-Jayavel/argoapp.git
     targetRevision: main
     path: image-updater/adservice
   destination:
