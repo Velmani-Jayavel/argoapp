@@ -5,4 +5,4 @@ metadata:
   namespace: ob3
 data:
   Error_To_Mail: Migrationsupport@avasoft.com
-  SES_User_Mail: rishab.p@avasoft.com
+  SES_User_Mail: velmani.j@avasoft.com
