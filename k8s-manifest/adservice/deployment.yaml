@@ -27,7 +27,7 @@ kind: Service
 metadata:
   name: feservice
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: feservice
   ports:
