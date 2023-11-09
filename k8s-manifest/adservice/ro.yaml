@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: apache
-        image: 673536620341.dkr.ecr.us-east-1.amazonaws.com/container-migration:v2
+        image: 673536620341.dkr.ecr.us-east-1.amazonaws.com/container-migration:v1
   selector:
     matchLabels:
       app: apache
