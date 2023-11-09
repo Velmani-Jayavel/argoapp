@@ -25,11 +25,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: adservice
+  name: feservice
 spec:
   type: ClusterIP
   selector:
-    app: adservice
+    app: feservice
   ports:
   - name: grpc
     port: 3000
