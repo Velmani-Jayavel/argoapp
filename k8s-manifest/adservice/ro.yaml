@@ -1,8 +1,8 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
-  name: apache-ro
-  namespace: apache-ns
+  name: portfolio
+  namespace: ob3
 spec:
   template:
     metadata:
@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: apache
-        image: httpd:2.4.55
+        image: 673536620341.dkr.ecr.us-east-1.amazonaws.com/container-migration:v2
   selector:
     matchLabels:
       app: apache
