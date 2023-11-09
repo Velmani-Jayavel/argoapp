@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: adservice
+  name: feservice
 spec:
   selector:
     matchLabels:
-      app: adservice
+      app: feservice
   template:
     metadata:
       labels:
-        app: adservice
+        app: feservice
     spec:
       containers:
       - name: server
         image: 673536620341.dkr.ecr.us-east-1.amazonaws.com/container-migration
         ports:
-        - containerPort: 9555
+        - containerPort: 3000
         env:
         - name: PORT
-          value: "9555"
+          value: "3000"
       imagePullSecrets:
       - name: container-migration
 ---
@@ -32,5 +32,5 @@ spec:
     app: adservice
   ports:
   - name: grpc
-    port: 9555
-    targetPort: 9555
+    port: 3000
+    targetPort: 3000
