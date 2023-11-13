@@ -11,6 +11,7 @@ metadata:
     argocd-image-updater.argoproj.io/myimage.pull-secret: pullsecret:argocd/image-pull-secrets
     argocd-image-updater.argoproj.io/myimage.update-strategy: latest
     argocd-image-updater.argoproj.io/git-branch: main
+    notifications.argoproj.io/subscribe.on-sync-succeeded.teams: ArgoCD_Notification_DEMO
 spec:
   project: default
   source:
